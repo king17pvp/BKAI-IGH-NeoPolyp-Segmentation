@@ -13,7 +13,7 @@ Where the /path/to/image/jpeg should be recommended to be the ABSOLUTE path (E.g
 
 ## Example input image
 
-```python infer.py --image_path resources/019410b1fcf0625f608b4ce97629ab55.jpeg```
+```python infer.py --image_path resources/example_image.jpeg```
 
 <p align="center">
   <img src="resources/019410b1fcf0625f608b4ce97629ab55.jpeg" alt = "UI" title = "Example of input image" width="500" height="270">
