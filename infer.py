@@ -42,6 +42,7 @@ def infer(image_path, model, device):
     global COLOR_DICT
     global TRANSFORMATION
     image = cv2.imread(image_path)
+    # cv2.imshow(image)
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     w, h= image.shape[0], image.shape[1]
     image = cv2.resize(image, (256, 256))
@@ -53,7 +54,8 @@ def infer(image_path, model, device):
     mask = np.argmax(mask, axis=2)
     mask_rgb = mask_to_rgb(mask, COLOR_DICT)
     mask_rgb = cv2.cvtColor(mask_rgb, cv2.COLOR_RGB2BGR)
-    cv2.imwrite("saved_segmentation.jpeg", mask_rgb)
+    cv2.imwrite("./resources/saved_segmentation.jpeg", mask_rgb)
+    print("Segmentation process successful!!")
 
 
 args = parser.parse_args()
