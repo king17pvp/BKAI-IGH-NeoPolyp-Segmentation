@@ -1,7 +1,11 @@
 # BKAI-IGH-NeoPolyp-Segmentation
 
 ## Instructions 
-It is recommended that you install the required libraries/packages first for convienent grading process :D
+
+The saved model was already pushed to this repo, so you just need to clone the repo via
+```git clone https://github.com/king17pvp/BKAI-IGH-NeoPolyp-Segmentation.git```
+
+It is recommended that you install the required libraries/packages first for convenient grading process :D
 
 ```pip install -r requirements.txt```
 
